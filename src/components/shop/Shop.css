@@ -1,0 +1,317 @@
+.shop-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.shop-wrapper h1 {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.shop-wrapper .product-title {
+  color: #c99e71;
+  font-size: 18px;
+}
+
+
+.product-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.product-card {
+  padding: 50px;
+  margin: 50px 0;
+  background: #121315;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.product-rate {
+  width: 186px;
+  margin: 30px 0;
+  height: 20px;
+}
+
+.product-info {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.product-price {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 20px 0 0 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+.card-wrapper {
+  display: flex;
+}
+
+.product-price span {
+  color: #c99e71;
+}
+
+
+.product-btn {
+  display: none;
+}
+
+.product-card:hover .product-btn {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  background: #ffaa4f;
+  color: #ffffff;
+  margin: 30px 0 0 0;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  border-radius: 1px;
+  justify-content: center;
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.product-card:hover .product-rate {
+  display: none;
+}
+
+.product-card:hover .product-info {
+  margin: 20px 0 0 0;
+}
+
+
+.btn-wwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__view__all {
+  width: 250px;
+  margin: 0 0 50px 0;
+  background: #c99e71;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  height: 60px;
+  text-transform: uppercase;
+}
+
+
+
+.shop-machine-wrapper {
+  background: #1c1814;
+  width: 100%;
+  margin: 0 0 50px 0;
+  height: 530px;
+  display: flex;
+}
+
+.machine-title {
+  color: #ffffff;
+  width: 500px;
+  font-size: 48px;
+  line-height: 63px;
+}
+
+.machine-btn {
+  width: 215px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  background: #c99e71;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.machine-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.machine-info p {
+  width: 535px;
+  margin: 40px 0 30px;
+  line-height: 28.8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+
+.machine-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1230px) {
+  .product-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .product-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .shop-wrapper h1 {
+    margin-bottom: 30px;
+  }
+
+  .product-card {
+    margin: 20px 0;
+    padding: 30px;
+  }
+
+  .product-rate {
+    width: 150px;
+  }
+
+  .product-info {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .btn-view-all {
+    width: 220px;
+    height: 50px;
+    margin: 30px 0;
+  }
+
+  .machine-title {
+    width: 80%;
+    font-size: 36px;
+  }
+
+  .machine-info p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-card {
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .product-info {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .machine-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .machine-info p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .shop-wrapper h1 {
+    font-size: 34px;
+  }
+
+  .shop-machine-wrapper {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .machine-img img {
+    width: 150px;
+    margin: 20px 0;
+  }
+
+  .machine-info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .machine-btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .machine-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-wrapper h1 {
+    font-size: 30px;
+  }
+
+  .product-wrapper {
+    gap: 15px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-rate {
+    width: 120px;
+  }
+
+  .product-info {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 12px;
+  }
+
+  .btn-view-all {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .machine-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .machine-info p {
+    font-size: 10px;
+  }
+}
